@@ -1,0 +1,8 @@
+C:\Users\niuc\Documents\GitHub\ppnfr\PNA_interface\PNA_interface\bin\Debug\PNA_interface.exe.config
+C:\Users\niuc\Documents\GitHub\ppnfr\PNA_interface\PNA_interface\obj\Debug\Interop.AgilentPNA835x.dll
+C:\Users\niuc\Documents\GitHub\ppnfr\PNA_interface\PNA_interface\obj\Debug\PNA_interface.csproj.ResolveComReference.cache
+C:\Users\niuc\Documents\GitHub\ppnfr\PNA_interface\PNA_interface\bin\Debug\PNA_interface.exe
+C:\Users\niuc\Documents\GitHub\ppnfr\PNA_interface\PNA_interface\bin\Debug\PNA_interface.pdb
+C:\Users\niuc\Documents\GitHub\ppnfr\PNA_interface\PNA_interface\obj\Debug\PNA_interface.csprojResolveAssemblyReference.cache
+C:\Users\niuc\Documents\GitHub\ppnfr\PNA_interface\PNA_interface\obj\Debug\PNA_interface.exe
+C:\Users\niuc\Documents\GitHub\ppnfr\PNA_interface\PNA_interface\obj\Debug\PNA_interface.pdb
