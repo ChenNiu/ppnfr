@@ -1,0 +1,20 @@
+classdef NearField_Operator
+    
+    
+    properties
+        A;
+        recon; % 
+        nf;
+        freq;
+        
+    end
+    
+    methods
+        function this = NearField_Operator(recon,nf,ferq)
+            this.recon = recon;
+            this.
+        end
+    end
+    
+end
+

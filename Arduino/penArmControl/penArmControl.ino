@@ -1,6 +1,6 @@
 #include <Scheduler.h>
 
-const String _version = "2.1.0";
+const String _version = "2.1.1";
 
 #define BRAKE 0
 #define STILL 0
@@ -217,6 +217,14 @@ void loop() {//handle user requests
         break;
       case 'r': // check ready or not (i.e. pen reaches target angle)
         Serial.println(penReady);
+        break;
+      case 's': // return status of opeartions
+        if(penOn&&(angleOut||angleOutPassive)){
+          Serial.println("1");
+        }
+        else{
+          Serial.println("0");
+        }
         break;
       case 'd': // turn debug on off
         if(debug){

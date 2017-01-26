@@ -1,0 +1,44 @@
+clc;
+clear all;
+close all;
+
+addpath('input','output');
+
+%% read input
+filename = 'testing.txt';
+nfMeas = PPNFR_NF_Measurement(filename);
+
+%% Reconstruction Surface
+fprintf('Building Reconstruction Plane...');
+reconSurf = Recon_Surface(nfMeas.aut_dim_x, nfMeas.aut_dim_y, nfMeas.freq);
+fprintf('done.\n');
+
+%% Build the near-field operator matrix
+nf_op = NearField_Operator(reconSurf,nfMeas,nfMeas.freq);
+
+%% Build the near-field operator matrix
+tic;
+fprintf('Building the near-field operator matrices...');
+[ A_nf ] = nf_operatorMat_generator( recon, nf, freq );
+fprintf('done.\n');
+toc;
+%% Build the far-field operator matrix
+fprintf('Building the far-field operator matrices...');
+[ A_FF ] = ff_operatorMat_generator( recon, ff, freq );
+fprintf('done.\n');
+
+
+
+%% plots
+% meas.plot_xy_S21_dB_Enor;
+% meas.plot_xyS21_dB_Etan;
+% meas.plot_autAng_penAng_S21_dB_Enor;
+% meas.plot_autAng_penAng_S21_dB_Etan;
+% meas.plot_phaseAng;
+
+% figure;
+% scatter(test.x,test.y,10,S21_dB,'filled');
+% axis('equal');
+% 
+% figure;
+% scatter(test.time,test.penAng,20,S21_dB,'filled');
